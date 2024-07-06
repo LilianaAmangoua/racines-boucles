@@ -1,0 +1,800 @@
+* {
+box-sizing: border-box;
+margin: 0;
+text-decoration: none;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #c3b9b7;
+    font-family: "Poppins", sans-serif;
+}
+
+nav {
+    height: 80px;
+width: 100%;
+background-color: #47294c;
+color: #c3b9b7;
+font-weight: 300;
+}
+
+.logo {width:150px;
+height:auto;
+float:left;
+margin-top: 12px;
+margin-left: 10px;}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height:80px;
+    margin: 0 5px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #c3b9b7;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+
+}
+
+.nav-items:hover {
+    background-color:#c3b9b7;
+    color:#47294c;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #c3b9b7;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor:pointer;
+    display: none;
+}
+
+#check {display: none;}
+
+
+header {text-align: center;
+    background-color: #dfe4de;
+    display: flex; 
+    align-items: center;
+    justify-content: center; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 427px;
+    background-image: url('images/accueil/femmephoto.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center; 
+    color: white;
+    font-weight: 700;
+}
+
+ 
+.titres {font-size: 1.8em; 
+font-weight: 900;
+color: #c3b9b7;
+text-align: center;
+text-shadow: 2px 2px #47294c;
+}
+
+h2 {text-align: center;
+padding-top: 20px;
+padding-bottom: 20px;
+font-size: 40px;
+font-weight: 500;
+}
+
+/*Partie Articles*/
+
+.container-articles {background-color: #c3b9b7;
+color: #47294c;}
+
+.articles {display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-bottom: 30px;
+background-color: #c3b9b7;
+color: #47294c;
+}
+
+.articles a {text-decoration: none;
+color: #c3b9b7;}
+
+.articles a:hover {text-decoration:underline;}
+
+article img { height: 340px;
+object-fit: cover;}
+
+article p {
+width: 250px;
+display: flex;
+flex-wrap: wrap;
+align-content: center;
+padding-top: 20px;
+padding-bottom: 20px;
+margin: 0 auto;
+}
+
+article {background-color:#47294c;
+margin-bottom: 15px;
+align-items: center;
+text-align: center;
+color:#c3b9b7;
+}
+
+/*Fin partie Article*/
+
+.autrice {display: flex;
+justify-content: space-between;
+background-color: #47294c;
+color: #c3b9b7;
+margin-top: 0;
+}
+
+.autrice img {height: 700px;
+flex: 1;}
+
+.p-autrice {font-size: 20px;
+margin: 50px;
+text-align: left;
+font-weight: 300;}
+
+.titre-autrice {font-size: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+    
+.newsletter {margin-top: 20px;
+text-align: center; 
+display: block;
+margin-left: auto;
+margin-right: auto;
+padding-top: 35px;
+padding-bottom: 35px;
+background-color: #c3b9b7;
+color: #47294c;}
+
+.newsletter-elements {margin-bottom: 10px;}
+
+button {
+border: 1px solid; 
+border-radius: 20px;
+padding: 10px 15px;
+width: 100px;
+cursor: pointer;
+background-color: #47294c;
+color: #c3b9b7;
+font-weight: 300;
+}
+
+.newsletter input {padding-left:20px;
+padding-top: 15px;
+padding-bottom: 15px;
+border: none;
+width: 350px;
+background-color: #eff1ee;
+border: 2px solid #47294c;
+border-radius:20px;}
+
+.newsletter-titre {font-weight: 500;
+font-size:40px;}
+
+.newsletter p {font-size: 20px;}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: #47294c;
+    color: #c3b9b7;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.item-footer {
+    margin: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #47294c;
+    color: #c3b9b7;
+    padding: 5px 10px;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.item-footer:hover {
+    background-color: #c3b9b7;
+    color: #47294c;
+    border-radius: 20px;
+}
+
+/*page articles*/
+
+.container-articles2 {background-color: #c3b9b7;
+    color: #47294c;}
+    
+.articles2 {display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #c3b9b7;
+    color: #47294c;
+    }
+    
+.articles2 a {text-decoration: none;
+    color: #c3b9b7;}
+    
+.articles2 a:hover {text-decoration:underline;}
+    
+.articles2 img { height: 340px;
+    object-fit: cover;}
+    
+.articles2 p {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+
+/*Article sur les cheveux en vacances*/
+
+.article-vacances {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.article-vacances img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+height: 250px;}
+
+/*Article sur forte porosité*/
+.liste-cheveux-forte-porosite {list-style-type:circle ;
+}
+
+.article-forte-porosite { margin-left: 50px;
+margin-right: 50px;}
+
+.article-forte-porosite img {display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+height: 250px;
+}
+
+/*Page Visage Carré*/
+
+.carre-article {
+margin-left: 50px;
+margin-right: 50px;
+}
+
+.carre-article img {
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.carre-article p:last-of-type {
+    margin-bottom: 20px;
+}
+
+.grid-carre {display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+row-gap: 30px;
+column-gap: 30px ;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.grid-carre span {
+    font-style: italic;
+    font-weight: 300;
+}
+
+.item-grid {
+    width: 100%;
+}
+
+.grid-carre img {
+    height: 300px;
+}
+
+/*Page A propos*/
+.autrice-apropos {display: flex;
+    justify-content: space-between;
+    background-color: #c3b9b7;
+    color: #47294c;
+    margin-top: 0;
+    height: auto;
+}
+
+.autrice-apropos img {height: 720px;
+    flex: 1;}
+    
+.p-autrice {font-size: 20px;
+    margin: 50px;
+    text-align: left;
+    font-weight: 300;
+}
+    
+.titre-autrice {font-size: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.autrice-apropos button {
+margin-top: 0;
+margin-left: 50px;
+margin-bottom: 50px;
+width: 200px;
+}
+
+.autrice-apropos a {text-decoration: none;
+color: #c3b9b7;
+}
+
+
+/*Page Contact*/
+.container-contact {display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+width: 100%;
+box-sizing: border-box;
+background-color: #c3b9b7;
+color: #47294c;
+}
+
+.contact {
+    text-align:center;
+    padding:30px;
+    border-radius:10px;
+    width: 50%;
+}
+
+form {
+padding:20px 100px;
+border-radius:10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+width:50%;
+}
+
+.fa-brands {
+    color: #47294c;
+}
+
+.fa-brands:hover {
+    color: #eff1ee;
+}
+    
+.btncontact {
+border: 1px solid; 
+border-radius: 20px;
+padding: 10px 15px;
+width: 100px;
+cursor: pointer;
+background-color: #47294c;
+color:#c3b9b7;
+font-weight: 300;
+}
+
+@media only screen and (max-width: 480px) {
+    .checkbtn {
+    display: block;
+    color: #c3c3c3;
+    cursor: pointer;
+    }
+
+    ul {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: #c3b9b7;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+      font-size: 20px;
+      color:#47294c;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked ~ ul {
+        left: 0; 
+    }
+
+    header {
+        height: auto;
+        padding: 20px;
+        font-size: 0.7em; 
+     font-weight: 100;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    .blog-box {
+        width: min-content;
+    }
+
+    article img {
+        height: 340px;
+    }
+
+    article p {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .newsletter input {
+        width: 90%;
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .newsletter-titre {
+        font-size: 30px;
+    }
+
+    .newsletter p {
+        font-size: 18px;
+    }
+
+    .container-articles h2 {
+        font-size: 30px;
+        flex-direction: column;
+    }
+
+    .autrice {
+        flex-direction: column;
+    }
+
+    .autrice img {
+        width: 100%;
+        height: auto;
+    }
+
+    .p-autrice, .titre-autrice {
+        margin: 20px;
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;  
+        padding: 20px;
+        height: 220px;
+        
+    }
+
+    .item-footer {
+        width: 100%; 
+        text-align: center; 
+        margin-top: 5px;
+    }
+
+    /*Page Articles*/
+
+    .articles2 {
+        flex-direction: column;
+        align-items: center;
+        max-height: 100vh; 
+        overflow-y: auto;
+    }
+
+    .blog-box2 {
+        width: fit-content; 
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles2 img {
+        object-fit: cover;
+    }
+
+
+
+    /*Page Visage Carré*/
+
+    .grid-carre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+
+    .carre-article {
+        margin-left: 8px;
+        margin-right: 8px;
+        word-spacing: 2px;
+    }
+
+    .carre-article img {
+        width: 100%;
+        height: auto;
+    }
+
+    .item-grid {
+        max-width: 70%;  
+    }
+
+    /*Page Fort porosité*/
+    .article-forte-porosite {
+        word-spacing: 2px;
+        flex-direction: column;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .article-forte-porosite img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /*Page Cheveux Vacances*/
+    .article-vacances {
+        word-spacing: 2px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .article-vacances img {
+        max-width: 100%;
+        height: auto; 
+    }
+
+    /*Page A propos*/
+
+    .autrice-apropos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-autrice, .titre-autrice {
+        margin-left: 8px;
+        margin-right: 8px;
+        word-spacing: 2px;
+    }
+    .autrice-apropos img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+
+    .autrice-apropos button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Page Contact*/
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .contact {width: 100%;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    #message {width: 150px;}
+
+
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px)
+{
+
+    .checkbtn {
+    display: block;
+    color: #c3c3c3;
+    cursor: pointer;
+    }
+
+    ul {
+    position: fixed;
+    width:100%;
+    height: 100vh;
+    background: #c3b9b7;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+
+    nav ul li a {
+      font-size: 20px;
+      color:#47294c;
+    }
+
+    a:hover, a.active {
+        background: none;
+        color: white;
+    }
+
+    #check:checked ~ ul {
+        left: 0; 
+    }
+
+    header {
+        width: 100%;
+        padding: 20px;
+        font-size: 0.7em; 
+     font-weight: 100;
+    }
+
+
+
+    .articles {
+        flex-direction: column;
+    }
+
+    .blog-box {
+        width: min-content;
+    }
+
+    article img {
+        height: 340px;
+    }
+
+    article p {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .autrice {
+        flex-direction: column;
+    }
+
+    .autrice img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;;
+        width: 80%;
+        height: auto;
+    }
+
+    .p-autrice, .titre-autrice {
+        margin: 20px;
+        text-align: center;
+    }
+
+    /*Page Articles*/
+
+    .articles2 {
+        flex-direction: column;
+        align-items: center;
+        max-height: 100vh; 
+        overflow-y: auto;
+    }
+
+    .blog-box2 {
+        width: fit-content; 
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articles2 img {
+        object-fit: cover;
+    }
+    
+    /*Page A propos*/
+    
+    .autrice-apropos {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .p-autrice, .titre-autrice {
+        margin-left: 8px;
+        margin-right: 8px;
+        word-spacing: 2px;
+    }
+    .autrice-apropos img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+    
+    .autrice-apropos button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+        /*Page Contact*/
+    
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    
+    .contact {
+        width: 100%;
+    }
+    
+    form {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;  
+        padding: 20px;
+        height: 220px;
+    }
+
+    .item-footer {
+        width: 100%; 
+        text-align: center; 
+        margin-top: 5px;
+    }
+
+    h2, .newsletter-titre {
+        font-size: 30px;
+    }
+    
+}
