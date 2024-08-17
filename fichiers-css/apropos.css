@@ -1,0 +1,62 @@
+.autrice-apropos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c3b9b7;
+    color: #47294c;
+    margin-top: 0;
+    height: auto;
+    width: 100%;
+}
+
+.autrice-apropos img {
+    height: 720px;
+}
+    
+.p-autrice {
+    font-size: 20px;
+    margin: 50px;
+    text-align: left;
+    font-weight: 300;
+}
+    
+.titre-autrice {font-size: 40px;
+    margin-left: 50px;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.autrice-apropos button {
+margin-top: 0;
+margin-left: 50px;
+margin-bottom: 50px;
+width: 200px;
+}
+
+.autrice-apropos a {text-decoration: none;
+color: #c3b9b7;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .autrice-apropos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-autrice, .titre-autrice {
+        margin-left: 8px;
+        margin-right: 8px;
+        word-spacing: 2px;
+    }
+    .autrice-apropos img {
+        max-width: 100%;
+        max-height: 500px;
+    }
+
+    .autrice-apropos button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
