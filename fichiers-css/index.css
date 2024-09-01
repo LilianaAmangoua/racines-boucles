@@ -8,7 +8,7 @@ header {
     margin-right: auto;
     width: 100%;
     height: 427px;
-    background-image: url('/fichiers-css/femmephoto.jpg');
+    background-image: url('/fichiers-css/istockphoto-511854154-612x612.jpg');
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center; 
@@ -16,21 +16,23 @@ header {
     font-weight: 700;
 }
 
-.titres {
+.header__titles {
     font-size: 1.8em; 
     font-weight: 900;
-    color: #c3b9b7;
+    color: #47294c;
     text-align: center;
-    text-shadow: 2px 2px #47294c;
+    background-color: #c3b9b7;
+    padding: 1% 3%;
+    /*text-shadow: 2px 2px #47294c;*/
 }
     
-/*Style articles*/
-.container-articles {
+/*Section articles*/
+.index-blog {
     background-color: #c3b9b7;
     color: #47294c;
 }
 
-.articles {
+.index-blog__list {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -39,21 +41,29 @@ header {
     color: #47294c;
 }
 
-.articles a {
+.index-blog__article {
+    background-color:#47294c;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: center;
+    color:#c3b9b7;
+}
+
+.index-blog__article--link {
     text-decoration: none;
     color: #c3b9b7;
 }
 
-.articles a:hover {
-text-decoration:underline;
+.index-blog__article--link:hover {
+    text-decoration:underline;
 }
 
-article img {
+.index-blog__article--image {
     height: 340px;
     object-fit: cover;
 }
 
-article p {
+.index-blog__article--title {
     width: 250px;
     display: flex;
     flex-wrap: wrap;
@@ -63,15 +73,9 @@ article p {
     margin: 0 auto;
 }
 
-article {
-    background-color:#47294c;
-    margin-bottom: 15px;
-    align-items: center;
-    text-align: center;
-    color:#c3b9b7;
-}
 
-/*Style partie autrice*/
+
+/*Setion à propos de l'autrice*/
 
 .autrice {
     display: flex;
@@ -81,22 +85,113 @@ article {
     margin-top: 0;
 }
 
-.autrice img {
+.autrice__image {
     height: 700px;
     flex: 1;
 }
-
-.p-autrice {
-    font-size: 20px;
-    margin: 50px;
+.autrice__text--title {
+    font-size: 40px;
+    margin: 15px 5%;
     text-align: left;
+    font-weight: 500;
+}
+.autrice__text--paragraphes {
+    font-size: 20px;
     font-weight: 300;
 }
 
-.titre-autrice {
-    font-size: 40px;
-    margin-left: 50px;
-    margin-top: 15px;
-    text-align: left;
-    font-weight: 500;
+
+/*Responsive smartphones*/
+@media only screen and (max-width: 480px) {
+    .header__titles {
+        background-color: #c3b9b7;
+        padding: 1% 3%;
+        /*text-shadow: 2px 2px #47294c;*/
+    }
+
+    /*Section articles*/
+    .index-blog__list {
+        flex-direction: column;
+    }
+
+    .index-blog__article {
+        width: min-content;
+    }
+
+    .index-blog__article--image {
+        height: 340px;
+    }
+
+    .index-blog__article--title {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /*Partie A propos de l'autrice de la page accueil*/
+
+    .autrice {
+        flex-direction: column;
+    }
+
+    .autrice__image {
+        width: 100%;
+        height: auto;
+    }
+
+    .autrice__text--title {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .autrice__text--last-paragraphes {
+        margin-bottom: 20px;
+    }
+}
+
+/*Responsive Tablettes*/
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    /*Section articles*/
+    .index-blog__list {
+        flex-direction: column;
+    }
+
+    .index-blog__article {
+        width: min-content;
+    }
+
+    .index-blog__article--image {
+        height: 340px;
+    }
+
+    .index-blog__article--title{
+        width: 100%;
+        padding: 10px;
+    }
+
+    /*Section à propos de l'autrice*/
+    .autrice {
+        flex-direction: column;
+    }
+
+    .autrice__image {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;;
+        width: 80%;
+        height: auto;
+    }
+
+    .autrice__text--title {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .autrice__text--title {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .autrice__text--last-paragraphes {
+        margin-bottom: 20px;
+    }
 }

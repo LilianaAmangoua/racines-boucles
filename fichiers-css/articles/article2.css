@@ -1,0 +1,29 @@
+.article2__content { 
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.article2__content--image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    height: 400px;
+}
+
+.article2__content--list {
+    list-style-type:circle ;
+}
+
+@media only screen and (max-width: 480px) {
+    .article2__content {
+        word-spacing: 2px;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .article2__content--image {
+        height: 300px;
+    }
+}

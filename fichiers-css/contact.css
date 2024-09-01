@@ -1,4 +1,4 @@
-.container-contact {
+.contact-page {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -8,14 +8,14 @@
     color: #47294c;
 }
     
-.contact {
+.contact__reseauxsociaux {
     text-align:center;
     padding:30px;
     border-radius:10px;
     width: 50%;
 }
 
-form {
+.formulaire {
     padding:20px 100px;
     border-radius:10px;
     display: flex;
@@ -24,15 +24,15 @@ form {
     width:50%;
 }
 
-.fa-brands {
+.contact__reseauxsociaux--icones {
     color: #47294c;
 }
 
-.fa-brands:hover {
+.contact__reseauxsociaux--icones:hover {
     color: #eff1ee;
 }
     
-.btncontact {
+.formulaire__bouton {
     border: 1px solid; 
     border-radius: 20px;
     padding: 10px 15px;
@@ -46,31 +46,34 @@ form {
 
 /*Page Contact*/
 @media only screen and (max-width: 480px) {
-    .container-contact {
+    .contact-page {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
 
-    .contact {width: 100%;
-    }
-
-    form {
+    .contact__reseauxsociaux {
         width: 100%;
     }
 
-    #message {width: 150px;}
+    .formulaire {
+        width: 100%;
+    }
+
+    #message {
+        width: 150px;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
 
-    .container-contact {
+    .contact-page {
         display: flex;
         flex-direction: column;
         align-content: center;
     }
 
-    .contact {
+    .contact__reseauxsociaux {
         width: 100%;
     }
 }

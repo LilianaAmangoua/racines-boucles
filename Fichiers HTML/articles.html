@@ -14,84 +14,89 @@
     </head>
 
     <body>
+		
 		<!--Menu-->
-		<nav>
+		<nav class="menu">
+
 			<input type="checkbox" id="check">
 
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
+			<label for="check" class="menu__checkbox">
+				<i class="fas fa-bars menu__icon"></i>
 			</label>
 
-			<label class="logo" href="/index.html">
-				<img class="logo" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
+			<label class="menu__logo" href="/index.html">
+				<img class="menu__logo--image" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
 			</label>
-			
-			<ul>
-				<li><a href="/index.html" class="active nav-items">Accueil</a></li>
-				<li><a href="/Fichiers HTML/articles.html" class="nav-items">Articles</a></li>
-				<li><a href="/Fichiers HTML/apropos.html" class="nav-items">A propos</a></li>
-				<li><a href="/Fichiers HTML/contact.html" class="nav-items">Contact</a></li>
+
+			<ul class="menu__list">
+				<li class="menu__list--item">
+					<a href="/index.html" class="menu__list--item-link">Accueil</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/articles.html" class="menu__list--item-link">Articles</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/apropos.html" class="menu__list--item-link">A propos</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/contact.html" class="menu__list--item-link">Contact</a>
+				</li>
 			</ul>
 		</nav>
 
 		<!--Articles du blog-->
 
-		<div class="container-articles">
+		<div class="blog">
 
-			<h2>Articles</h2>
+			<h2 class="main-titles">Articles</h2>
 
-			<div class="articles">
+			<div class="blog__list">
 
-				<article class="blog-box">
+				<div class="blog__article">
 
 					<div>
-						<img src="/images/accueil/image-2.jpg" alt="femme aux cheveux afro avec un parapluie sur la plage">
+						<img src="/images/accueil/image-2.jpg" alt="femme aux cheveux afro coiffé en half up">
 					</div>
 
 					<div>
-						<p><a href="/Fichiers HTML/articles/coiffures-visages-carre-article.html">Visage carré: 6 idées de coiffures</a></p>
+						<p><a href="/Fichiers HTML/articles/article1.html">Visage carré: 6 idées de coiffures</a></p>
 					</div>
-				</article>
+				</div>
 
-				<article class="blog-box">
+				<div class="blog__article">
 
 					<div>
-						<img src="/images/accueil/image-1.jpg" alt="femme noire qui souris avec ses cheveux en l'air">
-					</div>
-
-					<div>
-						<p><a href="/Fichiers HTML/articles/cheveux-faible-porosite.html">Prendre soin des cheveux afro à faible porosité</a></p>
-					</div>
-
-				</article>
-
-				<article class="blog-box">
-
-					<div>
-						<img src="/images/accueil/image-3.jpg" alt="portrait d'une femme noire avec ses cheveux afro sur un fond rose">
+						<img src="/images/accueil/image-1.jpg" alt="femme aux cheveux afro coiffé en queue de cheval">
 					</div>
 
 					<div>
-						<p><a href="/Fichiers HTML/articles/cheveux-en-vacances-article.html">Comment prendre soin des ses cheveux afro en vacances ?</a></p>
+						<p><a href="/Fichiers HTML/articles/article2.html">Prendre soin des cheveux afro à faible porosité</a></p>
 					</div>
 
-				</article>
+				</div>
+
+				<div class="blog__article">
+
+					<div>
+						<img src="/images/accueil/image-3.jpg" alt="selfie d'une femme noire portant ses cheveux afro">
+					</div>
+
+					<div>
+						<p><a href="/Fichiers HTML/articles/article3.html">Comment prendre soin des ses cheveux afro en vacances ?</a></p>
+					</div>
+
+				</div>
 
 			</div>
 		</div>
 
 		<!--Footer-->
-
-		<div class="container-footer">
-
-			<footer>
-				<p><a class="item-footer" href="/index.html">Accueil</a></p>
-				<p><a class="item-footer" href="/Fichiers HTML/articles.html">Articles</a></p>
-				<p><a class="item-footer" href="/Fichiers HTML/apropos.html">A propos</a></p>
-				<p><a class="item-footer" href="/Fichiers HTML/contact.html">Contact</a></p>
-			</footer>
-
-		</div>
+		<footer>
+			<p><a class="footer__link" href="/index.html">Accueil</a></p>
+			<p><a class="footer__link" href="articles.html">Articles</a></p>
+			<p><a class="footer__link" href="apropos.html">A propos</a></p>
+			<p><a class="footer__link" href="contact.html">Contact</a></p>
+		</footer>
 
 	</body>
 </html>

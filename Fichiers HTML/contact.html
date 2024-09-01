@@ -18,31 +18,40 @@
 	<body>
 
 		<!--Menu-->
-		<nav>
+		<nav class="menu">
+
 			<input type="checkbox" id="check">
 
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
+			<label for="check" class="menu__checkbox">
+				<i class="fas fa-bars menu__icon"></i>
 			</label>
 
-			<label class="logo" href="/index.html">
-				<img class="logo" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
+			<label class="menu__logo" href="/index.html">
+				<img class="menu__logo--image" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
 			</label>
 
-			<ul>
-				<li><a href="/index.html" class="active nav-items">Accueil</a></li>
-				<li><a href="/Fichiers HTML/articles.html" class="nav-items">Articles</a></li>
-				<li><a href="/Fichiers HTML/apropos.html" class="nav-items">A propos</a></li>
-				<li><a href="/Fichiers HTML/contact.html" class="nav-items">Contact</a></li>
+			<ul class="menu__list">
+				<li class="menu__list--item">
+					<a href="/index.html" class="menu__list--item-link">Accueil</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/articles.html" class="menu__list--item-link">Articles</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/apropos.html" class="menu__list--item-link">A propos</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/contact.html" class="menu__list--item-link">Contact</a>
+				</li>
 			</ul>
 		</nav>
 
 		<!--Contacts de Racine & Boucles-->
 
-		<div class="container-contact">
+		<div class="contact-page">
 
 			<!--Contact Réseaux sociaux-->
-			<div class="contact">
+			<div class="contact__reseauxsociaux">
 
 				<h2>Vous avez besoin de nous contacter ?</h2>
 
@@ -53,10 +62,10 @@
 				<div class="reseaux-sociaux">
 					<h3>Suivez-nous :</h3>
 					<a href="https://www.tiktok.com" target="_blank">
-						<i class="fa-brands fa-tiktok fa-xl"></i>
+						<i class="fa-brands fa-tiktok fa-xl contact__reseauxsociaux--icones"></i>
 					</a>
 					<a href="https://www.instagram.com" target="_blank">
-						<i class="fa-brands fa-instagram fa-2xl"></i>
+						<i class="fa-brands fa-instagram fa-2xl contact__reseauxsociaux--icones"></i>
 					</a>
 				</div> 
 			</div>
@@ -64,7 +73,7 @@
 			
 			<!--Formulaire de contact-->
 		
-			<form>
+			<form class="formulaire">
 				<label for="prenom">Prénom</label>
 				<input placeholder="Louis" type="text" id="prenom" required><br>
 				
@@ -74,32 +83,18 @@
 				<label for="message">Message</label>
 				<textarea rows="10" cols="35" placeholder="Ecrivez votre message" type="text" maxlenght="700" id="message" required></textarea><br>
 				
-				<input class="btncontact" type="submit" value="Envoyer">
+				<input class="formulaire__bouton" type="submit" value="Envoyer">
 				
 			</form>
 
 		</div>
-	
-		<!--S'abonner à la newsletter-->
-
-		<div class="newsletter">
-			<h2 class="newsletter-elements newsletter-titre">Besoin de plus de conseils capillaires ?</h2>
-
-			<p class="newsletter-elements">Recevez la newsletter exclusive</p>
-
-			<input class="newsletter-elements" placeholder="Votre adresse mail" type="email"><br>
-
-			<button class="newsletter-elements" type="submit" onclick="message()">S'inscrire</button>
-
-			<p id="confirmation"></p>
-		</div>
 		
 		<!--Footer-->
 		<footer>
-            <p><a class="item-footer" href="/index.html">Accueil</a></p>
-            <p><a class="item-footer" href="/Fichiers HTML/articles.html">Articles</a></p>
-            <p><a class="item-footer" href="/Fichiers HTML/apropos.html">A propos</a></p>
-            <p><a class="item-footer" href="/Fichiers HTML/contact.html">Contact</a></p>
-        </footer>
+			<p><a class="footer__link" href="/index.html">Accueil</a></p>
+			<p><a class="footer__link" href="articles.html">Articles</a></p>
+			<p><a class="footer__link" href="apropos.html">A propos</a></p>
+			<p><a class="footer__link" href="contact.html">Contact</a></p>
+		</footer>
 	</body>
 </html>

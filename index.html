@@ -19,70 +19,78 @@
 	<body>
 
 		<!--Menu-->
-		<nav>
+		<nav class="menu">
 
 			<input type="checkbox" id="check">
 
-			<label for="check" class="checkbtn">
-				<i class="fas fa-bars"></i>
+			<label for="check" class="menu__checkbox">
+				<i class="fas fa-bars menu__icon"></i>
 			</label>
 
-			<label class="logo" href="/index.html">
-				<img class="logo" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
+			<label class="menu__logo" href="/index.html">
+				<img class="menu__logo--image" src="/images/logos/racines--boucles-high-resolution-logo-transparent.png" alt="Logo Racines & Boucles">
 			</label>
 
-			<ul>
-				<li><a href="/index.html" class="active nav-items">Accueil</a></li>
-				<li><a href="/Fichiers HTML/articles.html" class="nav-items">Articles</a></li>
-				<li><a href="/Fichiers HTML/apropos.html" class="nav-items">A propos</a></li>
-				<li><a href="/Fichiers HTML/contact.html" class="nav-items">Contact</a></li>
+			<ul class="menu__list">
+				<li class="menu__list--item">
+					<a href="/index.html" class="menu__list--item-link">Accueil</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/articles.html" class="menu__list--item-link">Articles</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/apropos.html" class="menu__list--item-link">A propos</a>
+				</li>
+				<li class="menu__list--item">
+					<a href="/Fichiers HTML/contact.html" class="menu__list--item-link">Contact</a>
+				</li>
 			</ul>
 		</nav>
 
 		<!--Header-->
 		
 		<header>
-			<div class="titres">
+			<div class="header__titles">
 				<h1>Votre guide ultime pour les cheveux afro</h1>
-				<h6>Apprenez à aimer et prendre soin de vos cheveux naturels</h6>
+				<h6>Apprenez à enfin aimer vos cheveux naturels</h6>
 			</div>
 		</header>
 
 
 		<!--Articles-->
 
-		<div class="container-articles">
+		<div class="index-blog">
 
-			<h2>Derniers articles</h2>
+			<h2 class="index-blog__title main-titles">Derniers articles</h2>
 
-			<div class="articles">
+			<div class="index-blog__list">
 
-				<article class="blog-box">
+				<article class="index-blog__article">
 					<div>
-						<img src="/images/accueil/image-2.jpg" alt="femme aux cheveux afro avec un parapluie sur la plage">
+						<img class="index-blog__article--image" src="/images/accueil/image-2.jpg" alt="femme aux cheveux afro avec un parapluie sur la plage">
 					</div>
 					
 					<div>
-						<p><a href="/Fichiers HTML/articles/coiffures-visages-carre-article.html">Visage carré: 6 idées de coiffures</a></p>
+						<p class="index-blog__article--title"><a class="index-blog__article--link" src="/Fichiers HTML/articles/article1.html">Visage carré: 6 idées de coiffures</a></p>
 					</div>
 				</article>
 
-				<article class="blog-box">
+				<article class="index-blog__article">
 					<div>
-						<img src="/images/accueil/image-1.jpg" alt="femme noire qui souris avec ses cheveux en l'air">
+						<img class="index-blog__article--image" src="/images/accueil/image-1.jpg" alt="femme noire qui souris avec ses cheveux en l'air">
 					</div>
 					
 					<div>
-						<p><a href="/Fichiers HTML/articles/cheveux-faible-porosite.html">Prendre soin des cheveux afro à faible porosité</a></p>
+						<p class="index-blog__article--title"><a class="index-blog__article--link" href="/Fichiers HTML/articles/article2.html">Prendre soin des cheveux afro à faible porosité</a></p>
 					</div>
 				</article>
 
-				<article class="blog-box">
+				<article class="index-blog__article">
 					<div>
-						<img src="/images/accueil/image-3.jpg" alt="portrait d'une femme noire avec ses cheveux afro sur un fond rose">
+						<img class="index-blog__article--image" src="/images/accueil/image-3.jpg" alt="portrait d'une femme noire avec ses cheveux afro sur un fond rose">
 					</div>
 					<div>
-						<p><a href="/Fichiers HTML/articles/cheveux-en-vacances-article.html">Comment prendre soin des ses cheveux afro en vacances ?</a></p>
+						<p class="index-blog__article--title"><a class="index-blog__article--link" href="/Fichiers HTML/articles/article3.html">Comment prendre soin des ses cheveux afro en vacances ?</a></p>
 					</div>
 				</article>
 			</div>
@@ -92,17 +100,25 @@
 
 		<div class="autrice">
 
-			<img src="/images/accueil/image-liliana.jpg" alt="Image de l'autrice">
+			<img class="autrice__image" src="/images/accueil/image-liliana.jpg" alt="Image de l'autrice">
 
-			<div>
-				<p class="titre-autrice">A propos de l'autrice</p>
+			<div class="autrice__text">
+				<p class="autrice__text--title">A propos de l'autrice</p>
 				
-				<p class="p-autrice"> Bienvenu(e) sur Racines & Boucles, votre ressource dédiée aux soins des cheveux naturels afro !
-				Je suis Liliana, passionnée par les cheveux naturels afro et déterminée à partager mes connaissances et mon expérience avec vous. J'ai toujours été fascinée par la diversité et la beauté des textures et des styles de cheveux afro.</p>
+				<p class="autrice__text--paragraphes margin-text">
+					Bienvenu(e) sur Racines & Boucles, votre ressource dédiée aux soins des cheveux naturels afro !
+					Je suis Liliana, passionnée par les cheveux naturels afro et déterminée à partager mes connaissances et mon expérience avec vous. J'ai toujours été fascinée par la diversité et la beauté des textures et des styles de cheveux afro.
+				</p>
+				<br>
 				
-				<p class="p-autrice"v>Après des années d'expérimentation avec différents produits et techniques, j'ai découvert une véritable passion pour les soins capillaires naturels. Mon objectif avec ce blog est de partager mes astuces en matière de soins capillaires.</p>
+				<p class="autrice__text--paragraphes margin-text">
+					Après des années d'expérimentation avec différents produits et techniques, j'ai découvert une véritable passion pour les soins capillaires naturels. Mon objectif avec ce blog est de partager mes astuces en matière de soins capillaires.
+				</p>
+				<br>
 				
-				<p class="p-autrice">Sur Racines & Boucles, vous trouverez une multitude de conseils pratiques, de tutoriels et de revues de produits, tous spécialement conçus pour répondre aux besoins uniques des cheveux naturels afro.</p>
+				<p class="autrice__text--last-paragraphes autrice__text--paragraphes margin-text">
+					Sur Racines & Boucles, vous trouverez une multitude de conseils pratiques, de tutoriels et de revues de produits, tous spécialement conçus pour répondre aux besoins uniques des cheveux naturels afro.
+				</p>
 			</div>
 		</div>
 
@@ -110,24 +126,24 @@
 
 		<div class="newsletter">
 			
-			<h2 class="newsletter-elements newsletter-titre">Besoin de plus de conseils capillaires ?</h2>
+			<h2 class="newsletter__items newsletter__title">Besoin de plus de conseils capillaires ?</h2>
 			
-			<p class="newsletter-elements">Recevez la newsletter exclusive</p>
+			<p class="newsletter__items newsletter__text">Recevez la newsletter exclusive</p>
 			
-			<input class="newsletter-elements" placeholder="Votre adresse mail" type="email"><br>
+			<input class="newsletter__items newsletter__input" placeholder="Votre adresse mail" type="email"><br>
 			
-			<button class="newsletter-elements" type="submit" onclick="message()">S'inscrire</button>
+			<button class="newsletter__items newsletter__button" type="submit" onclick="message()">S'inscrire</button>
 			
-			<p id="confirmation"></p>
+			<p id="js-confirmation"></p>
 		</div>
 
-		<!--Footer-->
 
+		<!--Footer-->
 		<footer>
-			<p><a class="item-footer" href="/index.html">Accueil</a></p>
-			<p><a class="item-footer" href="articles.html">Articles</a></p>
-			<p><a class="item-footer" href="apropos.html">A propos</a></p>
-			<p><a class="item-footer" href="contact.html">Contact</a></p>
+			<p><a class="footer__link" href="/index.html">Accueil</a></p>
+			<p><a class="footer__link" href="articles.html">Articles</a></p>
+			<p><a class="footer__link" href="apropos.html">A propos</a></p>
+			<p><a class="footer__link" href="contact.html">Contact</a></p>
 		</footer>
 
 	</body>

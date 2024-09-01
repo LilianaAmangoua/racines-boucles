@@ -1,25 +1,28 @@
-.article-vacances {
+.article3__content {
     margin-left: 50px;
     margin-right: 50px;
 }
-
-.article-vacances img {
+    
+.article3__content--image {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    height: 250px;
+    height: 500px;
+}
+
+.article3__content--last-paragraphe {
+    margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 480px) {
-    .article-vacances {
+    .article3__content {
         word-spacing: 2px;
         margin-left: 8px;
         margin-right: 8px;
     }
 
-    .article-vacances img {
-        max-width: 100%;
-        height: auto; 
+    .article3__content--image {
+        height: 300px;
     }
 }
